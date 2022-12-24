@@ -615,7 +615,7 @@ main{
         top: 220px;
         right: 0px;        
     }
-   
+
 }
 .caja3{
     grid-column: 1/2;
@@ -686,7 +686,43 @@ main{
         height: 300px;
         margin-top: 20px;
     }
+}
 
+/*empieza products*/
+main{
+    margin: 0%;
+    padding: 0%;
+}
+.img-header{
+    min-height: 550px;
+    width: 100%;
+    background-image: url(../img/imagen1.jpg);
+    background-size: cover;
+    color: #fff;
+}
+.BodyProducts{
+    background-color: #000000;
+}
+.row{
+    padding: 0%;
+    margin: 0%;
+}
+.borde{
+    border: 1px solid rgb(71, 70, 70);
+}
+.col-sm-6 {
+    padding: 0%;
+}
+.imagen_productos{
+    width: 300px;
+    height: 270px;
+}
+.imagen_productos1{
+    width: 100px;
+    height: 100px;
+}
+.row > div > h2{
+    font-size: 20px;
 }
 
 
