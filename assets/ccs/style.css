@@ -753,7 +753,7 @@ main{
     display: grid;
     grid-area: main;
     position: relative;
-    background-color: #d64400;
+    background-color: #994620a9;
 }
 .footerN{
     display: grid;
@@ -805,7 +805,7 @@ main{
         margin-top: 40px;
     }
     .menuN1{
-        width: 80%;
+        width: 90%;
         font-size: 70%;
     }
     .menuN2{
@@ -814,9 +814,10 @@ main{
     }
     .newN{
         justify-content: center;
-        width: 320px;
+        width: 100%;
+        margin: 0%;
     }
-    
+
 }
 .resaltado{
     color: rgb(168, 150, 46);
@@ -826,7 +827,7 @@ main{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 30px;
+    margin-top: 50px;
 }
 .menuN2{  
     display: flex;
@@ -858,19 +859,27 @@ main{
     align-items: flex-end;
     flex-wrap: wrap;
     min-height: 400px;
-    margin-bottom: 100px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+@media(max-width:1120px){
+    .newN1{
+        flex-direction: column;
+        align-content: center;
+        
+    }
 }
 .contenidoNoticias{
     color: azure;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 300px;
+    height: 400px;
     width: 380px;
     padding: 30px;
 }
 .sold2{
-    width: 300px;
+    max-width: 300px;
     height: 500px;
     z-index: 1;
 }
@@ -879,11 +888,9 @@ main{
     flex-direction: column;
     justify-content: space-around;
     color: azure;
-    height: 400px;
+    height: 480px;
     width: 380px;
-    padding: 70px 30px 10px 30px;
-    bottom: 10px;
-    right: 90px;   
+    padding: 70px 30px 10px 30px;   
 }
 .buttonN{
     background-color: transparent;
@@ -904,13 +911,35 @@ main{
     background: linear-gradient(150deg, rgba(168, 150, 46, 0.7), transparent);
 }
 .capaOrange{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     height: 500px;
-    width: 360px;   
+    width: 360px; 
 }
-@media(max-width:1120px){
-    .newN1{
-        flex-direction: column;
+@media(max-width:500px){
+    .contenidoNoticias{
         align-items: center;
-        margin: 30px;
+        text-align: center;
+        height: 450px;
+        width: 300px;
+        padding: 30px;
+    }
+    .capaOrange{
+        height: 500px;
+        width: 300px; 
+    }
+    .sold2{
+        max-width: 280px;
+        height: 450px;
+        z-index: 1;
+    }
+    .contenidoNoticias1{
+        text-align: center;
+        align-items: center;
+        height: 500px;
+        width: 300px;
+        padding: 30px;   
     }
 }
+
