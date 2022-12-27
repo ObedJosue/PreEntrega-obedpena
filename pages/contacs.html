@@ -6,99 +6,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACS</title>
     <link rel="stylesheet" href="../assets/ccs/style.css">
-    <link rel="shortcut icon" href="../assets/img/iconos/consola.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/img/icons/consola.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
-<body class="fondoContacs">
-    <nav class="navBar">
-        <ul>
+<body class="bodyContacs m-0 col-12">
+    <nav class="navbar justify-content-end mb-4 align-items-center">
+        <img class="menu_mobile" src="../assets/img/icons//menu.png" alt="menu">
+        <ul >
             <li><a href="/index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li>
-                <a href="products.html">PRODUCTS</a>
-                <ul>
-                    <li><a href="">MOUSE</a></li>
-                    <li><a href="">KEYBOARDS</a></li>
-                    <li><a href="">HEADSETS</a></li>
-                    <li><a href="">MOUSEPADS</a></li>
-                </ul>
-            </li>
-            <li><a href="newslettler.html">NEWSLETTLER</a></li>
-            <li><a class="navB" href="contacs.html">CONTACS</a></li> 
-        </ul>    
-    </nav> 
-    <header>
-        <img class="banerContacts" src="../assets/img/bannerC.jpg" alt="playzone">
-        <h2 class="tituloC">CONTACS US</h2>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./products.html">PRODUCTS</a></li>
+            <li><a href="./newslettler.html">NEWSLETTERS</a></li>
+            <li><a class="items_home"href="./contacs.html">CONTACTS</a></li>
+        </ul>            
+        <form class="search1" action="">
+            <input class="busqueda" type="search" name="busqueda" id="" placeholder="Search">
+            <button class="lupa" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input class="icon_menu" type="image" src="../assets/img/icons/acceso.png" alt="user">
+        </form>            
+    </nav>
+
+    <header class="headerB col-12 d-flex justify-content-center align-items-center">
+        <img class="banerContacts col-12" src="../assets/img/bannerC.jpg" alt="playzone">
+        <div class="z-3 position-absolute p-5 rounded-3 "><h2 class="conta">CONTACT US</h2></div>
     </header>
     <main>
-        <div class="datosT">
+        <div class="datosT d-flex justify-content-center m-5">
         <h2>Get in touch with us!</h2>
         </div>
-        <div class="datosContacts">
-            <div class="datosP">
-                <img class="icono"  src="../assets/img/iconos/telefonoNegro.jpg" alt="phone">
+        <div class="datosContacts d-flex justify-content-around m-5 flex-wrap">
+            <div class="datosP text-center">
+                <img class="iconoC"  src="../assets/img/icons/telefonoNegro.jpg" alt="phone">
                 <h2>PHONE</h2>
                 <p>+54 11 9555 9555</p>
                 <p>+54 11 9999 9999</p>
             </div>
-            <div class="datosA">
-                <img class="icono"  src="../assets/img/iconos//mailN.jpg" alt="point">
+            <div class="datosA text-center">
+                <img class="iconoC"  src="../assets/img/icons/ubicacionN.jpg" alt="point">
                 <h2>ADDRESS</h2>
                 <p>5 green tampa, queen city</p>
                 <p>metro, eeuu</p>
             </div>
-            <div class="datosM">
-                <img class="icono"  src="../assets/img/iconos/mapN.jpg" alt="mail">
+            <div class="datosM text-center">
+                <img class="iconoC"  src="../assets/img/icons/mailN.jpg" alt="mail">
                 <h2>MAIL</h2>
                 <p>support@company.com</p>
                 <p>sales@company.com</p>
             </div>            
         </div>
-        <div class="titulo-formu">
-            <h3>IF YOU GOT ANY QUESTIONS</h3>
-            <h3>PLEASE DO NOT HESITATE TO SEND US A MESSAGE</h3>
-        </div>   
-        <form class="form" method="post" enctype="application/x-www-form-urlencoded">
-            <input class="control" type="text" name="name" placeholder="Your name" required>
-            <input class="control" type="text" name="mail" placeholder="Your mail" required>
-            <input class="control" type="text" name="subject" placeholder="Subject" required>
-            <textarea class="control" name="message" placeholder="Message"></textarea>
-            <input class="boton" type="submit" value="SEND MESSAGE">
-        </form>
-        <div class="datosT">
-            <h2>Conenect with us!</h2>
+        <div class="d-flex justify-content-center m-5">
+            <h3 class="titulo-formu">IF YOU GOT ANY QUESTIONS</h3>
+            <h3 class="titulo-formu">PLEASE DO NOT HESITATE TO SEND US A MESSAGE</h3>
         </div>
-        <div class="datosContacts">
+        <div class="d-flex flex-column align-items-center">
+            <div class="mb-3 col-4 m-2">                
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your name">
+            </div>
+            <div class="mb-3 col-4 m-2">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div> 
+            <div class="mb-3 col-4 m-2">               
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Subject">
+            </div>
+            <div class="mb-3 col-4 m-2">        
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
+            </div>
+            <button class="btn btn-primary col-4" type="submit">Submit form</button>
+        </div>
+        <div class="datosT m-5 d-flex justify-content-center">
+            <h2>Connect with us!</h2>
+        </div>
+        <div class="datosContacts d-flex justify-content-center">
             <div class="datost">
-                <img class="icono"  src="../assets/img/iconos/twitch.png" alt="phone">
+                <img class="icono"  src="../assets/img/icons/discord.png" alt="phone">
             </div>
             <div class="datost datostik">
-                <img class="icono"  src="../assets/img/iconos/tik-tok.png" alt="point">
+                <img class="icono"  src="../assets/img/icons/gorjeo.png" alt="point">
             </div>
             <div class="datost datosf">
-                <img class="icono"  src="../assets/img/iconos/facebook.png" alt="mail">
+                <img class="icono"  src="../assets/img/icons/whatsapp.png" alt="mail">
             </div>  
             <div class="datost datosi">
-                <img class="icono"  src="../assets/img/iconos/instagram.png" alt="mail">
+                <img class="icono"  src="../assets/img/icons/telegrama.png" alt="mail">
             </div>  
             <div class="datost datosd">
-                <img class="icono"  src="../assets/img/iconos/discord.png" alt="mail">
+                <img class="icono"  src="../assets/img/icons/youtube.png" alt="mail">
             </div>  
         <Div>
     </main>
-    <footer class="footerC">
-        <div class="footerC1">
-            <h3>Lorem, ipsum dolor.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, voluptate.</p>
-        </div>
-        <div class="footerC2">
-            <h3>CONTACS US</h3>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem, consectetur.</p>
-        </div>
-        <div class="footerC3">
-            <h3>OFICCE</h3>
-            <p>+54 11 9999 9999</p>
-        </div>
-    </footer>    
+    <section class="mapC">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26269.017678530654!2d-58.36977847933776!3d-34.61358707948039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334d9c2d70389%3A0xe7b5e9ee316678f!2sPuerto%20Madero%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1672106129165!5m2!1ses-419!2sar" width="100%" height="260" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer class="footerN">
+        <div class="footer_home">
+            <div class="footer1">
+                <img class="icono" src="../assets/img/icons/consola.png" alt="mando">
+                <p>© 2022 Company, Inc</p>
+            </div>
+            <div class="footer2">
+                <a href="/index.html">HOME</a>
+                <a href="/pages/about.html">ABOUT</a>
+                <a href="/pages/products.html">PRODUCTS</a>
+                <a href="/pages/newslettler.html">NEWSLETTERS</a>
+                <a href="/pages/contacs.html">CONTACTS</a>
+            </div>
+            <div class="footer3">
+                <i class="fa-brands fa-discord"></i>
+                <i class="fa-brands fa-twitch"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>                                   
+            </div>
+        </div>           
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>    
 </body>
 </html>

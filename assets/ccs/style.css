@@ -690,11 +690,6 @@ main{
 
 /*empieza products*/
 
-main{
-    margin: 0%;
-    padding: 0%;
-}
-
 .BodyProducts{
     background-color: #000000;
 }
@@ -943,3 +938,26 @@ main{
     }
 }
 
+/**empieza contacts**/
+
+.bodyContacs{
+    background-color: #000000;
+    color: #fff;
+    margin: 0%;
+    padding: 0%;
+}
+.conta{
+    font-size: 50px;
+}
+.titulo-formu{
+    font-size: 20px;
+}
+.mapC{
+    opacity: 0.5;
+}
+.iconoC{
+    border-radius: 10px;
+    width: 90px;
+    height: 90px;
+    margin: 3px;
+}
