@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/ccs/style.css">
     <link rel="shortcut icon" href="../assets/img/icons/consola.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body class="imgfondo">
     <div class="contenNewslettler">
@@ -31,7 +33,7 @@
         </nav>
         <header class="headerN">
             <div class="menuN1">
-                <div class="description-video1">
+                <div class="description-video1" data-aos="zoom-in" data-aos-duration="2000">
                     <h2 class="resaltado">THE MUST HAVE GAME</h2>
                     <h2>2023.ABRIL SUMER</h2>
                     <P class="parrafo">stay uo to date for chances to claim free expanxions and collect
@@ -47,19 +49,19 @@
         </header>        
         <main class="menuN2 mainN">
             <div class="newN">
-                <div class="noticias1">
+                <div class="noticias1" data-aos="fade-right" data-aos-duration="1500">
                     <h2>NOVEMBER <span class="resaltado">2023</span></h2>
                     <p>PLAY FIRT ON</p> 
                     <h2 class="separacion">XBOX</h2>
                 </div>
-                <div class="noticias2">
+                <div class="noticias2" data-aos="fade-left" data-aos-duration="1500">
                     <h2>DECEMBER <span class="resaltado">2023</span></h2>
                     <p>COME TO ALL PLATAFORMS</p> 
                     <h2 class="separacion">PS5 - PC</h2>
                 </div>
             </div>
             <div class="newN1">
-                <div class="contenidoNoticias capa">
+                <div class="contenidoNoticias capa" >
                     <h4>CUSTOMIZE YOUR SOLDIERS</h4>
                     <P>
                         The most intense, immersive Battlefield yet. Every
@@ -112,6 +114,10 @@
                 </div>
             </div>           
         </footer> 
-    </div>     
+    </div> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>    
 </body>
 </html>

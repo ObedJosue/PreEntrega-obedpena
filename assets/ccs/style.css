@@ -19,7 +19,7 @@
 }
 .navbar{
     display: flex;
-    justify-content: end ;
+    justify-content: flex-end;
     align-items: center;
     height: 60px;
     grid-area: nav;
@@ -109,7 +109,7 @@
     display: none;
     max-height: 50px;
 }
-@media(max-width:857px){
+@media(max-width:860px){
     .navbar{
         justify-content: space-between;
     }
@@ -709,6 +709,7 @@ main{
 .producto2{
     max-width: 750px;
     min-width: 320px;
+    transition: .5s;
 }
 .producto1{
     max-width: 300px;
@@ -724,7 +725,14 @@ main{
     height: 100px;
 }
 .producto3{
-    width: 290px;    
+    width: 290px;  
+    transition: .5s;  
+}
+.producto3:hover{
+    transform: translatey(-7px);
+}
+.producto2:hover{
+    transform: translatey(-7px);
 }
 
 /*empieza newslettler*/
@@ -872,6 +880,7 @@ main{
     height: 400px;
     width: 380px;
     padding: 30px;
+    transition: .5s;
 }
 .sold2{
     max-width: 300px;
@@ -885,7 +894,14 @@ main{
     color: azure;
     height: 480px;
     width: 380px;
-    padding: 70px 30px 10px 30px;   
+    padding: 70px 30px 10px 30px; 
+    transition: .5s;  
+}
+.contenidoNoticias1:hover{
+    transform: translatey(-7px);
+}
+.contenidoNoticias:hover{
+    transform: translatey(-7px);
 }
 .buttonN{
     background-color: transparent;
@@ -960,4 +976,28 @@ main{
     width: 90px;
     height: 90px;
     margin: 3px;
+}
+.datosc:hover{
+    transform: translatey(-7px);
+    background-color: #1b1b1b;
+    border-radius: 10px;
+}
+.datosc{
+    width: 250px;
+    transition: .5s;
+}
+.redesC{
+    transition: .5s;
+}
+.redesC:hover{
+    transform: translatey(-7px);
+}
+
+@media(max-width:560px){
+    .conta{
+        font-size: 25px;
+    }
+    .titulo-formu{
+        font-size: 15px;
+    }
 }
