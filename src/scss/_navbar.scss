@@ -1,0 +1,127 @@
+.navbar{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 60px;
+    grid-area: nav;
+    .menu_mobile{
+        height: auto;
+        padding: 4px;
+        display: none;
+        max-height: 50px;
+        @media(max-width:860px){
+            display: block; 
+            margin-left: 15px;
+            &:hover + ul{
+                left: -20px;
+            }   
+        }
+    }
+    >ul{
+        .items_home{
+            background-color: rgb(46, 46, 46);  
+            border-radius: 5px;  
+        }
+        display: flex;
+        list-style: none;
+        padding: 15px;
+        @media(max-width:860px){
+            &:hover{
+                left: 0px;
+            }
+        }
+        > li > a{
+            color: $colorprincipal;
+            list-style: none;
+            text-decoration: none;
+            padding: 10px;
+            position: relative;
+            margin: 0.2rem;
+            font-weight: 600;
+            &:hover{
+                color: #fa3131a2;
+            }
+        }
+    }
+    ul li a::before{
+        content:'';
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+        width: 0%;
+        height: .1rem;
+        background-color: #808888;
+        transition: 0.5s;
+    }
+    ul li a::after{
+        content:'';
+        position: absolute;
+        bottom: 0%;
+        right: 0%;
+        width: 0%;
+        height: .1rem;
+        background-color: #ffffff;
+        transition: 0.5s;
+    }
+    ul li a:hover::before{
+        width: 50%;
+        transform: translate(100%);
+    }
+    ul li a:hover::after{
+        width: 50%;
+        transform: translate(-100%);
+    }
+    .search1{
+        width: 250px;
+        display: flex;
+        justify-content: center;
+        margin: 5px;
+        .busqueda{
+            color: $colorfondo;
+            padding: 10px;
+            max-width: 150px;
+            height: 30px;
+            margin-right: 0px;
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+            border: 0px;
+        }
+        .lupa{
+            height: 30px;
+            border-left: 0px;
+            padding: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border: none;
+        }
+        .icon_menu{
+            height: 30px;
+            background-color: $colorprincipal;
+            border-radius: 30px;  
+            margin-left: 10px;
+        }
+    }
+    @media(max-width:860px){
+        justify-content: space-between;
+        > ul{
+            position: absolute;
+            flex-direction: column;
+            width: 300px;
+            height: auto;   
+            top: 44px;  
+            left:-300px;
+            transition: 0.5S;
+            > li {
+                height: 50px;
+                background-color: $colorfondo;  
+                z-index: 3;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }   
+    }
+}
+
+
+

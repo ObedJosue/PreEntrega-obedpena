@@ -1,0 +1,45 @@
+footer{
+    background-color: $colorfondo;
+    grid-area: footer;
+    color: $colorprincipal; 
+}
+.footerN{
+    display: grid;
+    grid-area: footer;
+    position: relative;
+    .footer_home{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        min-height: 80px;
+        .footer1{
+            display: flex;
+            align-items: center;
+            font-size: 10px;
+        }
+        .footer2 > a{
+            text-decoration: none;
+            color: $colorprincipal;
+            padding: 10px;
+            border-radius: 5px;
+            height: 20px;
+            &:hover{
+                background-color: rgb(29, 29, 29);
+            }
+        }
+        @media(max-width:644px){
+            .footer2{
+                display: none;
+            }
+        }
+        .footer3 > i{
+            padding: 5px;
+        }
+        .icono{
+            height: 40px;
+            width: 40px;
+            margin-right: 20px;
+        }
+    }
+}
