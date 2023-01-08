@@ -459,41 +459,40 @@ main .caja1 .texto1 .btnA {
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.texto2 {
+.caja2 .texto2 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.texto2 > p {
+.caja2 .texto2 > p {
   min-width: 250px;
   max-width: 500px;
   padding: 0px 20px 20px 20px;
   font-size: 15px;
   text-align: center;
 }
-.texto2 > h3 {
+.caja2 .texto2 > h3 {
   min-width: 300px;
   max-width: 500px;
   font-size: 30px;
   padding: 20px;
   margin-top: 50px;
 }
-.texto2 .imgC2b {
+.caja2 .texto2 .imgC2b {
   position: relative;
   display: flex;
   justify-content: center;
   width: 400px;
   min-height: 500px;
 }
-.texto2 .imgC2b .imgC2 {
+.caja2 .texto2 .imgC2b .imgC2 {
   position: absolute;
   top: 50px;
   height: 330px;
   width: 300px;
   z-index: 5;
 }
-.texto2 .imgC2b .imgC22 {
+.caja2 .texto2 .imgC2b .imgC22 {
   height: 300px;
   width: 200px;
   position: absolute;
@@ -502,7 +501,7 @@ main .caja1 .texto1 .btnA {
   left: 10px;
   z-index: 0;
 }
-.texto2 .imgC2b .imgC222 {
+.caja2 .texto2 .imgC2b .imgC222 {
   height: 100px;
   width: 200px;
   position: absolute;
@@ -510,13 +509,12 @@ main .caja1 .texto1 .btnA {
   top: 20px;
   right: 20px;
 }
-
-.texto2b {
+.caja2 .texto2b {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
 }
-.texto2b > h3 {
+.caja2 .texto2b > h3 {
   min-width: 300px;
   max-width: 400px;
   font-size: 30px;
@@ -524,21 +522,21 @@ main .caja1 .texto1 .btnA {
   margin-top: 0px;
 }
 @media (max-width: 1051px) {
-  .texto2b > h3 {
+  .caja2 .texto2b > h3 {
     order: 2;
   }
-  .texto2b > p {
+  .caja2 .texto2b > p {
     order: 1;
   }
 }
-.texto2b .imgCc {
+.caja2 .texto2b .imgCc {
   position: relative;
   z-index: 1;
   width: 400px;
   min-height: 400px;
   top: 20px;
 }
-.texto2b .imgCc .imgC2c {
+.caja2 .texto2b .imgCc .imgC2c {
   position: absolute;
   top: 60px;
   left: 30px;
@@ -546,7 +544,7 @@ main .caja1 .texto1 .btnA {
   width: 300px;
   z-index: 5;
 }
-.texto2b .imgCc .imgC22c {
+.caja2 .texto2b .imgCc .imgC22c {
   height: 280px;
   width: 200px;
   position: absolute;
@@ -555,7 +553,7 @@ main .caja1 .texto1 .btnA {
   left: 0px;
   z-index: 0;
 }
-.texto2b .imgCc .imgC222c {
+.caja2 .texto2b .imgCc .imgC222c {
   height: 150px;
   width: 200px;
   position: absolute;
@@ -565,14 +563,13 @@ main .caja1 .texto1 .btnA {
   right: 10px;
   z-index: 2;
 }
-
 @media (max-width: 405px) {
-  .imgC2 {
+  .caja2 .imgC2 {
     top: 50px;
     height: 280px;
     width: 280px;
   }
-  .imgC22 {
+  .caja2 .imgC22 {
     height: 230px;
     width: 150px;
     position: absolute;
@@ -581,7 +578,7 @@ main .caja1 .texto1 .btnA {
     left: 30px;
     z-index: 0;
   }
-  .imgC222 {
+  .caja2 .imgC222 {
     height: 100px;
     width: 200px;
     position: absolute;
@@ -589,29 +586,29 @@ main .caja1 .texto1 .btnA {
     top: 20px;
     right: 30px;
   }
-  .imgC2b {
+  .caja2 .imgC2b {
     width: 400px;
     min-height: 400px;
   }
-  .imgCc {
+  .caja2 .imgCc {
     width: 350px;
     min-height: 400px;
     top: 20px;
   }
-  .imgC2c {
+  .caja2 .imgC2c {
     top: 60px;
     left: 30px;
     height: 260px;
     width: 280px;
   }
-  .imgC222c {
+  .caja2 .imgC222c {
     height: 150px;
     width: 200px;
     top: 220px;
     right: 0px;
   }
 }
-.fondoA2 {
+.caja2 .fondoA2 {
   grid-column: 1/2;
   grid-row: 3/4;
   background-color: rgb(41, 41, 41);
