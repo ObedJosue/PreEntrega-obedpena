@@ -147,6 +147,12 @@ main{
         grid-template-columns: auto;
         position: relative;   
     }
+    .fondoA1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        background-color: rgb(41, 41, 41);
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 60%);
+    }
     .caja1{
         grid-column: 1/2;
         grid-row: 1/2;
