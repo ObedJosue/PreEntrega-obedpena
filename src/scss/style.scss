@@ -582,51 +582,50 @@ main{
     grid-area: header;
     display: flex;
     justify-content: center;
+    .menuN1{
+        display: flex;
+        min-height: 640px;
+        width: 100%;
+        color: $colorprincipal;
+        flex-wrap: wrap;
+        justify-content: center;
+        .description-video1{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 40px 40px 0px 40px;
+            min-width: 300px;
+            justify-content: center;
+            .parrafo{
+                text-align: start;
+                max-width: 450px;
+                margin: 20px 20px 20px 0px;
+            }
+            .buttonV{
+                background-color: transparent;
+                padding: 5px 10px;
+                margin-top: 10px;
+                color: $colorprincipal;
+                border-color: rgb(168, 150, 46);
+                width: 140px;
+            }
+        }
+        .imagenheader{
+            display: flex;
+            align-items: center;
+            .video{
+                height: 350px;
+                width: 500px ;
+                margin-top: 40px;
+            }
+        }
+    }
 }
 .mainN{
     display: grid;
     grid-area: main;
     position: relative;
     background-color: #994620a9;
-}
-
-.menuN1{
-    display: flex;
-    min-height: 640px;
-    width: 100%;
-    color: azure;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.description-video1{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 40px 40px 0px 40px;
-    min-width: 300px;
-    justify-content: center;
-}
-.parrafo{
-    text-align: start;
-    max-width: 450px;
-    margin: 20px 20px 20px 0px;
-}
-.buttonV{
-    background-color: transparent;
-    padding: 5px 10px;
-    margin-top: 10px;
-    color: rgb(255, 255, 255);
-    border-color: rgb(168, 150, 46);
-    width: 140px;
-}
-.imagenheader{
-    display: flex;
-    align-items: center;
-}
-.video{
-    height: 350px;
-    width: 500px ;
-    margin-top: 40px;
 }
 @media(max-width:550px){
     .video{
@@ -658,6 +657,22 @@ main{
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 50px;
+    .noticias1{
+        color: $colorprincipal;
+        text-align: center; 
+        width: 280px;
+    }
+    .noticias2{   
+        color: $colorprincipal;
+        text-align: center; 
+        width: 280px;
+    }
+    .separacion{
+        margin-top: 25px;
+        margin-bottom: 40px;
+        font-size: 40px;
+        color:rgb(168, 150, 46);
+    }
 }
 .menuN2{  
     display: flex;
@@ -665,23 +680,7 @@ main{
     position: relative;  
     flex-wrap: wrap;
     min-height: 600px;
-    color: azure;
-}
-.noticias1{
-    color: azure;
-    text-align: center; 
-    width: 280px;
-}
-.noticias2{   
-    color: azure;
-    text-align: center; 
-    width: 280px;
-}
-.separacion{
-    margin-top: 25px;
-    margin-bottom: 40px;
-    font-size: 40px;
-    color:rgb(168, 150, 46);
+    color: $colorprincipal;
 }
 .newN1{
     display: flex;
@@ -691,69 +690,67 @@ main{
     min-height: 400px;
     width: 100%;
     margin-bottom: 30px;
-}
-@media(max-width:1120px){
-    .newN1{
-        flex-direction: column;
-        align-content: center;
-        
+    @media(max-width:1120px){
+            flex-direction: column;
+            align-content: center;
     }
-}
-.contenidoNoticias{
-    color: azure;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 400px;
-    width: 380px;
-    padding: 30px;
-    transition: .5s;
-}
-.sold2{
-    max-width: 300px;
-    height: 500px;
-    z-index: 1;
-}
-.contenidoNoticias1{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    color: azure;
-    height: 480px;
-    width: 380px;
-    padding: 70px 30px 10px 30px; 
-    transition: .5s;  
-}
-.contenidoNoticias1:hover{
-    transform: translatey(-7px);
-}
-.contenidoNoticias:hover{
-    transform: translatey(-7px);
-}
-.buttonN{
-    background-color: transparent;
-    padding: 5px 10px;
-    width: 150px;
-    margin-top: 20px;
-    color: rgb(255, 255, 255);
-    border-color: rgb(168, 150, 46);
-}
-.capa{
-    content:"";
-    color: antiquewhite;
-    background: linear-gradient(rgba(0, 0, 2, 0.3), transparent);
-}
-.capa1{
-    content:"";
-    color: antiquewhite;
-    background: linear-gradient(150deg, rgba(168, 150, 46, 0.7), transparent);
-}
-.capaOrange{
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    height: 500px;
-    width: 360px; 
+    .contenidoNoticias{
+        color: $colorprincipal;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 400px;
+        width: 380px;
+        padding: 30px;
+        transition: .5s;
+        &:hover{
+            transform: translatey(-7px);
+        }
+    }
+    
+    .contenidoNoticias1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        color: azure;
+        height: 480px;
+        width: 380px;
+        padding: 70px 30px 10px 30px; 
+        transition: .5s; 
+        &:hover{
+            transform: translatey(-7px);
+        } 
+    }
+    .buttonN{
+        background-color: transparent;
+        padding: 5px 10px;
+        width: 150px;
+        margin-top: 20px;
+        color: rgb(255, 255, 255);
+        border-color: rgb(168, 150, 46);
+    }
+    .capa{
+        content:"";
+        color: antiquewhite;
+        background: linear-gradient(rgba(0, 0, 2, 0.3), transparent);
+    }
+    .capa1{
+        content:"";
+        color: antiquewhite;
+        background: linear-gradient(150deg, rgba(168, 150, 46, 0.7), transparent);
+    }
+    .capaOrange{
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        height: 500px;
+        width: 360px; 
+        .sold2{
+            max-width: 300px;
+            height: 500px;
+            z-index: 1;
+        }
+    }
 }
 @media(max-width:500px){
     .contenidoNoticias{
