@@ -952,56 +952,131 @@ main .caja1 .texto1 .btnA {
   }
 }
 /**empieza contacts**/
-.bodyContacs {
-  background-color: #000000;
-  color: #fff;
-  margin: 0%;
-  padding: 0%;
+.contenContacs1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "section section section section" "footer footer footer footer";
 }
-
-.conta {
-  font-size: 50px;
+.contenContacs1 .headerC {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-
-.titulo-formu {
-  font-size: 20px;
+.contenContacs1 .headerC .bannerC {
+  width: 100vw;
+  position: relative;
+  left: 0%;
+  top: 0%;
+  z-index: -1;
 }
-
-.mapC {
-  opacity: 0.5;
+.contenContacs1 .headerC .conta {
+  position: absolute;
+  font-size: clamp(1rem, 4vw, 7rem);
+  color: white;
 }
-
-.iconoC {
-  border-radius: 10px;
-  width: 90px;
-  height: 90px;
-  margin: 3px;
+.contenContacs1 .datosT {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
 }
-
-.datosc:hover {
+.contenContacs1 .datosContacts {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contenContacs1 .datosContacts .datosc {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 15px;
+  width: 250px;
+  transition: 0.5s;
+}
+.contenContacs1 .datosContacts .datosc > h2 {
+  padding: 12px;
+}
+.contenContacs1 .datosContacts .datosc > p {
+  padding: 2px;
+}
+.contenContacs1 .datosContacts .datosc:hover {
   transform: translatey(-7px);
   background-color: #1b1b1b;
   border-radius: 10px;
 }
-
-.datosc {
-  width: 250px;
-  transition: 0.5s;
+.contenContacs1 .datosContacts .datosc .iconoC {
+  border-radius: 10px;
+  width: 70px;
+  height: 70px;
+  margin: 3px;
 }
-
-.redesC {
-  transition: 0.5s;
+.contenContacs1 .titulo-for {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 0px 20px;
 }
-
-.redesC:hover {
-  transform: translatey(-7px);
+.contenContacs1 .titulo-for .titulo-formu {
+  padding: 5px;
+  font-size: 20px;
 }
-
-@media (max-width: 560px) {
-  .conta {
-    font-size: 25px;
-  }
-  .titulo-formu {
+@media (max-width: 360px) {
+  .contenContacs1 .titulo-for .titulo-formu {
     font-size: 15px;
   }
+}
+.contenContacs1 .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenContacs1 .formulario .form-control {
+  border-radius: 10px;
+  width: 40vw;
+  height: 50px;
+  padding: 10px;
+  margin: 10px;
+}
+@media (max-width: 700px) {
+  .contenContacs1 .formulario .form-control {
+    width: 55%;
+    height: 40px;
+  }
+}
+.contenContacs1 .formulario .btn {
+  background-color: #0d6efd;
+  color: white;
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+}
+.contenContacs1 .tiluloR {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.contenContacs1 .datosRedes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+.contenContacs1 .datosRedes .redesC {
+  transition: 0.5s;
+}
+.contenContacs1 .datosRedes .redesC:hover {
+  transform: translatey(-7px);
+}
+.contenContacs1 .icono {
+  height: 40px;
+  width: 40px;
+}
+.contenContacs1 .mapC {
+  opacity: 0.5;
 }
