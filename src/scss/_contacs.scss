@@ -1,0 +1,128 @@
+.contenContacs1{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: "nav nav nav nav"
+    "header header header header"
+    "main main main main"
+    "section section section section"
+    "footer footer footer footer";
+    .headerC{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+            .bannerC{
+            width: 100vw;
+            position: relative;
+            left: 0%;
+            top: 0%;
+            z-index: -1;
+        }
+        .conta{
+            position: absolute;
+            font-size: clamp(1rem, 4vw, 7rem);
+            color: $colorprincipal;     
+        }
+    }
+    .datosT{
+        display: flex;
+        justify-content: center;
+        margin: 50px 0px;
+    }
+    .datosContacts{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .datosc{
+            text-align: center; 
+            margin-bottom: 50px;  
+            padding: 15px;
+            width: 250px;
+            transition: .5s;            
+            > h2 {
+                padding: 12px;
+            }    
+            > p {
+                padding: 2px;
+            }  
+            &:hover{
+                transform: translatey(-7px);
+                background-color: #1b1b1b;
+                border-radius: 10px;
+            }
+            .iconoC{
+                border-radius: 10px;
+                width: 70px;
+                height: 70px;
+                margin: 3px;
+            }          
+        }
+    }
+    .titulo-for{
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        margin: 0px 20px;
+        .titulo-formu{
+            padding: 5px;
+            font-size: 20px;
+            @media(max-width:360px){
+                font-size: 15px;
+            }
+        }
+    }
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        align-items: center;       
+        .form-control{
+            border-radius: 10px;
+            width: 40vw;
+            height: 50px;
+            padding: 10px;
+            margin: 10px;
+            @media(max-width:700px){
+                width: 55%;
+                height: 40px;
+            }
+        }
+        .btn{
+            background-color: #0d6efd;
+            color: $colorprincipal;
+            width: 150px;
+            height: 40px;
+            border-radius: 10px;
+            margin-bottom: 50px;
+            margin-top: 10px;            
+        }          
+    }
+    .tiluloR{
+        display: flex;
+        justify-content: center;
+        padding: 15px;
+    }
+    .datosRedes{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 30px; 
+        .redesC{
+            transition: .5s;
+        }
+        .redesC:hover{
+            transform: translatey(-7px);
+        }      
+    }
+    .icono{
+        height: 40px;
+        width: 40px;
+    }
+    .mapC{
+        opacity: 0.5;
+    }
+}

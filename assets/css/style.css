@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -190,6 +189,15 @@ main .tarjeta_padre .tarjeta {
   margin: 10px;
 }
 
+.resaltado {
+  color: rgb(168, 150, 46);
+  font-size: 29px;
+}
+
+.contenProducts .productos .producto2 .producto2b, .contenProducts .productos .producto .producto1 {
+  border: 1px solid rgb(71, 70, 70);
+}
+
 .contenIndex {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -231,11 +239,12 @@ header .cont_header .title .title1 {
   color: transparent;
 }
 header .btn {
-  padding: 5px;
-  margin: 30px 0px;
   background-color: transparent;
-  color: aliceblue;
-  border-color: aliceblue;
+  padding: 5px 10px;
+  width: 150px;
+  margin: 30px 0px;
+  color: rgb(255, 255, 255);
+  border-color: white;
 }
 
 main {
@@ -308,7 +317,6 @@ section div img:hover {
   box-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
 
-/** Empieza pestaña about**/
 .contenAbout {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -680,64 +688,134 @@ main .caja1 .texto1 .btnA {
     margin-top: 20px;
   }
 }
-/*empieza products*/
 .BodyProducts {
-  background-color: #000000;
+  background-color: black;
 }
 
-.row {
-  padding: 0%;
-  margin: 0%;
+.contenProducts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "footer footer footer footer";
 }
-
-.borde {
-  border: 1px solid rgb(71, 70, 70);
+.contenProducts .bannerProductos {
+  width: 100%;
+  height: 90%;
 }
-
-.col-sm-6 {
-  padding: 0%;
+.contenProducts .productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 90px;
+  row-gap: 30px;
 }
-
-.row > div > h2 {
-  font-size: 20px;
-}
-
-.producto2 {
+.contenProducts .productos .producto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   max-width: 750px;
   min-width: 320px;
+  margin: 0px 10px;
   transition: 0.5s;
 }
-
-.producto1 {
+.contenProducts .productos .producto:hover {
+  transform: translatey(-7px);
+}
+@media (max-width: 509px) {
+  .contenProducts .productos .producto .producto1 {
+    order: 1;
+  }
+}
+.contenProducts .productos .producto .producto1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  row-gap: 20px;
+  padding: 10px;
   max-width: 300px;
-  min-width: 165px;
+  min-width: 190px;
   height: 270px;
 }
-
-.imagen_productos {
+@media (max-width: 509px) {
+  .contenProducts .productos .producto .producto1 {
+    width: 270px;
+    height: 150px;
+  }
+}
+.contenProducts .productos .producto .producto1 .btn-primary {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+}
+.contenProducts .productos .producto .producto1 .btn-primary:hover {
+  background-color: #125fd3;
+}
+.contenProducts .productos .producto .producto1 .btn {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  width: 120px;
+}
+.contenProducts .productos .producto .producto1 .btn:hover {
+  background-color: #125fd3;
+}
+.contenProducts .productos .producto .imagen_productos {
   width: 300px;
   height: 270px;
 }
-
-.imagen_productos1 {
+@media (max-width: 509px) {
+  .contenProducts .productos .producto .imagen_productos {
+    width: 270px;
+    height: 200px;
+  }
+}
+.contenProducts .productos .producto2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.contenProducts .productos .producto2 .producto2a {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.contenProducts .productos .producto2 .producto2b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  row-gap: 10px;
+  width: 270px;
+  padding: 20px;
+  transition: 0.5s;
+}
+.contenProducts .productos .producto2 .producto2b:hover {
+  transform: translatey(-7px);
+}
+.contenProducts .productos .producto2 .producto2b > h2 {
+  padding: 10px;
+}
+.contenProducts .productos .producto2 .producto2b .imagen_productos1 {
   width: 100px;
   height: 100px;
 }
-
-.producto3 {
-  width: 290px;
-  transition: 0.5s;
+.contenProducts .productos .producto2 .producto2b .btn-primary {
+  background-color: #0d6efd;
+  color: white;
+  border-radius: 5px;
+  height: 30px;
+  width: 100px;
+}
+.contenProducts .productos .producto2 .producto2b .btn-primary:hover {
+  background-color: #125fd3;
 }
 
-.producto3:hover {
-  transform: translatey(-7px);
-}
-
-.producto2:hover {
-  transform: translatey(-7px);
-}
-
-/*empieza newslettler*/
 .contenNewslettler {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -775,10 +853,10 @@ main .caja1 .texto1 .btnA {
 .headerN .menuN1 .description-video1 .buttonV {
   background-color: transparent;
   padding: 5px 10px;
-  margin-top: 10px;
-  color: white;
+  width: 150px;
+  margin: 30px 0px;
+  color: rgb(255, 255, 255);
   border-color: rgb(168, 150, 46);
-  width: 140px;
 }
 .headerN .menuN1 .imagenheader {
   display: flex;
@@ -794,7 +872,7 @@ main .caja1 .texto1 .btnA {
   display: grid;
   grid-area: main;
   position: relative;
-  background-color: rgba(153, 70, 32, 0.662745098);
+  background-color: rgba(145, 66, 30, 0.662745098);
 }
 
 @media (max-width: 550px) {
@@ -817,11 +895,6 @@ main .caja1 .texto1 .btnA {
     margin: 0%;
   }
 }
-.resaltado {
-  color: rgb(168, 150, 46);
-  font-size: 29px;
-}
-
 .newN {
   display: flex;
   justify-content: space-around;
@@ -882,6 +955,14 @@ main .caja1 .texto1 .btnA {
 .newN1 .contenidoNoticias:hover {
   transform: translatey(-7px);
 }
+.newN1 .contenidoNoticias .buttonN {
+  background-color: transparent;
+  padding: 5px 10px;
+  width: 150px;
+  margin: 30px 0px;
+  color: rgb(255, 255, 255);
+  border-color: rgb(168, 150, 46);
+}
 .newN1 .contenidoNoticias1 {
   display: flex;
   flex-direction: column;
@@ -895,11 +976,11 @@ main .caja1 .texto1 .btnA {
 .newN1 .contenidoNoticias1:hover {
   transform: translatey(-7px);
 }
-.newN1 .buttonN {
+.newN1 .contenidoNoticias1 .buttonN {
   background-color: transparent;
   padding: 5px 10px;
   width: 150px;
-  margin-top: 20px;
+  margin: 30px 0px;
   color: rgb(255, 255, 255);
   border-color: rgb(168, 150, 46);
 }
@@ -951,7 +1032,6 @@ main .caja1 .texto1 .btnA {
     padding: 30px;
   }
 }
-/**empieza contacts**/
 .contenContacs1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr);

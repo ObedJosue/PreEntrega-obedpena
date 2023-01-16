@@ -1,7 +1,14 @@
-%tarjeta{
+%tarjetaindex{
     display: flex;
     width: 350px;
     height: 250px;
     padding: 10px;
     margin: 10px; 
+}
+%resaltadoNewslettler{
+    color: rgb(168, 150, 46);
+    font-size: 29px;
+}
+%borde{
+    border: 1px solid rgb(71, 70, 70);
 }
