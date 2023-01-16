@@ -735,6 +735,14 @@ main .caja1 .texto1 .btnA {
   max-width: 300px;
   min-width: 190px;
   height: 270px;
+  position: relative;
+  overflow: hidden;
+}
+.contenProducts .productos .producto .producto1 > h2 {
+  position: absolute;
+  top: 50px;
+  font-size: 110px;
+  color: rgba(255, 255, 255, 0.13);
 }
 @media (max-width: 509px) {
   .contenProducts .productos .producto .producto1 {
@@ -748,6 +756,7 @@ main .caja1 .texto1 .btnA {
   border-radius: 5px;
   height: 30px;
   width: 100px;
+  z-index: 1;
 }
 .contenProducts .productos .producto .producto1 .btn-primary:hover {
   background-color: #125fd3;
@@ -758,6 +767,7 @@ main .caja1 .texto1 .btnA {
   border-radius: 5px;
   height: 30px;
   width: 120px;
+  z-index: 1;
 }
 .contenProducts .productos .producto .producto1 .btn:hover {
   background-color: #125fd3;

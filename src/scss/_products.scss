@@ -43,16 +43,26 @@
                 padding: 10px;
                 max-width: 300px;
                 min-width: 190px;
-                height: 270px;                
+                height: 270px;
+                position: relative;
+                overflow: hidden; 
+                > h2 {
+                    position: absolute;
+                    top: 50px;
+                    font-size: 110px;
+                    color: rgba(255, 255, 255, 0.13);
+                }               
                 @media(max-width:509px){
                     width: 270px;   
                     height: 150px;           
                 }
                 .btn-primary{
                     @include btn(30px, 100px);
+                    z-index: 1;
                 }
                 .btn{
-                    @include btn(30px, 120px)
+                    @include btn(30px, 120px);
+                    z-index: 1;
                 }
                 @extend %borde;
             }    
@@ -104,6 +114,3 @@
         }
     }
 }
-
-
-
