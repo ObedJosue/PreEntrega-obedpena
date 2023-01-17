@@ -30,7 +30,7 @@
             &:hover{
                 transform: translatey(-7px);
             }
-            @media(max-width:509px){
+            @media(max-width:530px){
                 .producto1{
                     order: 1;                   
                 }                          
@@ -42,34 +42,42 @@
                 row-gap: 20px;
                 padding: 10px;
                 max-width: 300px;
-                min-width: 190px;
+                min-width: 211px;
                 height: 270px;
                 position: relative;
-                overflow: hidden; 
+                overflow: hidden;
                 > h2 {
                     position: absolute;
                     top: 50px;
                     font-size: 110px;
-                    color: rgba(255, 255, 255, 0.13);
+                    color: rgba(255, 255, 255, 0.088);
+                    @media (max-width: 530px){
+                        top: 10px;
+                    }
                 }               
-                @media(max-width:509px){
+                @media(max-width:530px){
                     width: 270px;   
                     height: 150px;           
                 }
                 .btn-primary{
                     @include btn(30px, 100px);
-                    z-index: 1;
                 }
                 .btn{
                     @include btn(30px, 120px);
-                    z-index: 1;
                 }
                 @extend %borde;
+                .titlepro{
+                    position: absolute;
+                    top: 10px;
+                }
+                .subtitleP{
+                    font-size: 30px;
+                }
             }    
             .imagen_productos{
                 width: 300px; 
                 height: 270px;
-                @media(max-width:509px){
+                @media(max-width:530px){
                     width: 270px;
                     height: 200px;
                 }

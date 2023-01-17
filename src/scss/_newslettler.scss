@@ -42,7 +42,13 @@
                 height: 350px;
                 width: 500px ;
                 margin-top: 40px;
+                @media(max-width:570px){
+                    height: 270px;
+                    width: 300px;
+                    margin-top: 40px;
+                }
             }
+            
         }
     }
 }
@@ -52,12 +58,7 @@
     position: relative;
     background-color: #91421ea9;
 }
-@media(max-width:550px){
-    .video{
-        height: 300px;
-        width: 320px;
-        margin-top: 40px;
-    }
+@media(max-width:570px){
     .menuN1{
         width: 90%;
         font-size: 70%;
