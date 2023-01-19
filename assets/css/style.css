@@ -51,7 +51,7 @@
   font-weight: 600;
 }
 .navbar > ul > li > a:hover {
-  color: rgba(250, 49, 49, 0.6352941176);
+  color: rgba(170, 162, 162, 0.6352941176);
 }
 .navbar ul li a::before {
   content: "";
@@ -194,8 +194,8 @@ main .tarjeta_padre .tarjeta {
   font-size: 29px;
 }
 
-.contenProducts .productos .producto2 .producto2b, .contenProducts .productos .producto .producto1 {
-  border: 1px solid rgb(71, 70, 70);
+.contenProducts .productos .producto2 .producto2b, .contenProducts .productos .producto {
+  border: 1px solid rgb(87, 86, 86);
 }
 
 .contenIndex {
@@ -710,6 +710,7 @@ main .caja1 .texto1 .btnA {
 .contenProducts .bannerProductos {
   width: 100%;
   height: 90%;
+  z-index: 1;
 }
 .contenProducts .productos {
   display: flex;
@@ -725,12 +726,17 @@ main .caja1 .texto1 .btnA {
   max-width: 750px;
   min-width: 320px;
   margin: 0px 10px;
+  overflow: hidden;
   transition: 0.5s;
 }
 .contenProducts .productos .producto:hover {
   transform: translatey(-7px);
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 @media (max-width: 530px) {
+  .contenProducts .productos .producto {
+    width: 280px;
+  }
   .contenProducts .productos .producto .producto1 {
     order: 1;
   }
@@ -746,12 +752,13 @@ main .caja1 .texto1 .btnA {
   height: 270px;
   position: relative;
   overflow: hidden;
+  z-index: 1;
 }
 .contenProducts .productos .producto .producto1 > h2 {
   position: absolute;
   top: 50px;
   font-size: 110px;
-  color: rgba(255, 255, 255, 0.088);
+  color: rgba(255, 255, 255, 0.13);
 }
 @media (max-width: 530px) {
   .contenProducts .productos .producto .producto1 > h2 {
@@ -762,6 +769,7 @@ main .caja1 .texto1 .btnA {
   .contenProducts .productos .producto .producto1 {
     width: 270px;
     height: 150px;
+    align-items: center;
   }
 }
 .contenProducts .productos .producto .producto1 .btn-primary {
@@ -794,8 +802,10 @@ main .caja1 .texto1 .btnA {
   font-size: 30px;
 }
 .contenProducts .productos .producto .imagen_productos {
+  padding: 3px;
   width: 300px;
   height: 270px;
+  z-index: 1;
 }
 @media (max-width: 530px) {
   .contenProducts .productos .producto .imagen_productos {
@@ -828,6 +838,7 @@ main .caja1 .texto1 .btnA {
 }
 .contenProducts .productos .producto2 .producto2b:hover {
   transform: translatey(-7px);
+  box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 .contenProducts .productos .producto2 .producto2b > h2 {
   padding: 10px;
