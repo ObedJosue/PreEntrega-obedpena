@@ -927,7 +927,7 @@ main .caja1 .texto1 .btnA {
 
 @media (max-width: 570px) {
   .menuN1 {
-    width: 90%;
+    width: 100%;
     font-size: 70%;
   }
   .menuN2 {
@@ -978,7 +978,6 @@ main .caja1 .texto1 .btnA {
   align-items: flex-end;
   flex-wrap: wrap;
   min-height: 400px;
-  width: 100%;
   margin-bottom: 30px;
 }
 @media (max-width: 1120px) {
@@ -1008,6 +1007,15 @@ main .caja1 .texto1 .btnA {
   color: rgb(255, 255, 255);
   border-color: rgb(168, 150, 46);
 }
+@media (max-width: 500px) {
+  .newN1 .contenidoNoticias {
+    align-items: center;
+    text-align: center;
+    height: 450px;
+    width: 300px;
+    padding: 30px;
+  }
+}
 .newN1 .contenidoNoticias1 {
   display: flex;
   flex-direction: column;
@@ -1029,6 +1037,15 @@ main .caja1 .texto1 .btnA {
   color: rgb(255, 255, 255);
   border-color: rgb(168, 150, 46);
 }
+@media (max-width: 500px) {
+  .newN1 .contenidoNoticias1 {
+    text-align: center;
+    align-items: center;
+    height: 500px;
+    width: 300px;
+    padding: 30px;
+  }
+}
 .newN1 .capa {
   content: "";
   color: antiquewhite;
@@ -1044,26 +1061,21 @@ main .caja1 .texto1 .btnA {
   justify-content: center;
   align-items: center;
   height: 500px;
-  width: 360px;
+  width: 380px;
 }
 .newN1 .capaOrange .sold2 {
   max-width: 300px;
   height: 500px;
   z-index: 1;
 }
-
 @media (max-width: 500px) {
-  .contenidoNoticias {
-    align-items: center;
-    text-align: center;
-    height: 450px;
-    width: 300px;
-    padding: 30px;
-  }
-  .capaOrange {
+  .newN1 .capaOrange {
     height: 500px;
     width: 300px;
   }
+}
+
+@media (max-width: 500px) {
   .sold2 {
     max-width: 280px;
     height: 450px;
