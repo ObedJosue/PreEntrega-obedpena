@@ -324,6 +324,10 @@ section div img:hover {
   grid-template-areas: "nav nav nav nav" "main main main main" "footer footer footer footer";
 }
 
+.imgfondo {
+  overflow: hidden;
+}
+
 main {
   grid-area: main;
   color: #fff;
@@ -864,6 +868,10 @@ main .caja1 .texto1 .btnA {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, auto);
   grid-template-areas: "nav nav nav nav" "header header header header" "main main main main" "footer footer footer footer";
+}
+
+.imgfondo {
+  overflow: hidden;
 }
 
 .headerN {
