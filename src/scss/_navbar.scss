@@ -25,6 +25,9 @@
         display: flex;
         list-style: none;
         padding: 15px;
+        &:hover{
+            left: -20px;
+        }
         > li > a{
             color: $colorprincipal;
             list-style: none;
