@@ -50,7 +50,7 @@ if (opcion === "1" || opcion.toLowerCase() === "comprar") {
   let total = precio * cantidad;
 
   alert("Detalle de compra:\n\nProducto: " + producto + "\nCantidad: " + cantidad + "\nPrecio unitario: $" + precio + "\nTotal: $" + total );
-  alert("En breve te contactara un vendedor, Gracias por tu compra.");
+  alert("En breve te contactara un vendedor para finalizar tu compra.");
 
 
 } 
